@@ -2,6 +2,10 @@ import { Utils } from '../app/Utils'
 
 describe('Utils test suite', () => {
 
+	beforeEach(() => {
+		console.log('before each');
+	})
+
 	test('first test', () => {
 		const result = Utils.toUpperCase('abc');
 		expect(result).toBe('ABC');
